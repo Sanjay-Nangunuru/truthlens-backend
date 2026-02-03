@@ -39,7 +39,7 @@ def clean_text(text):
 def verify_news(text: str):
     """Use NewsData.io API to verify news credibility."""
     try:
-        api_key = "pub_739fa9147f314eb385c6eb424899e969"  # ✅ Free public key
+        api_key = "pub_739fa9147f314eb385c6eb424899e969"  # Free public key
         query = clean_text(text)
         url = f"https://newsdata.io/api/1/news?apikey={api_key}&q={query}&language=en"
 
@@ -205,3 +205,4 @@ def home():
 # -----------------------------
 # Run using:
 # uvicorn main:app --reload
+
